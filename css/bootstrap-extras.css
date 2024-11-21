@@ -1,0 +1,276 @@
+/*
+================================
+BOOTSTRAP MEGAMENU
+================================
+*/
+
+
+/* 
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #000;
+    outline: 0;
+} */
+nav#bootfour .navbar {
+    background: #fff;
+    transition: all .6s;
+    backface-visibility: hidden;
+}
+@media (min-width: 992px) {
+    nav#bootfour.navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.75rem;
+        padding-left: 1.75rem;
+    }
+    /* nav#bootfour.navbar-expand-lg .navbar-nav li.nav-item.dropdown .nav-link {
+        padding-right: inherit;
+        padding-left: inherit;
+    } */
+    nav#bootfour .navbar-expand-lg {
+        padding: 0px;
+    }
+}
+nav#bootfour.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,1);
+}
+nav#bootfour .navbar-toggler {
+    border-color: #fff;
+}
+
+nav#bootfour .navbar-toggler:focus {
+    background: none;
+    outline: 0;
+}
+
+nav#bootfour .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #000;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+nav#bootfour .navbar-toggler:hover span,
+nav#bootfour .navbar-toggler:focus span {
+    background: #000;
+}
+
+/* rotate first span */
+nav#bootfour .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+/* hide second span */
+nav#bootfour .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+
+/* rotate third span */
+nav#bootfour .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+nav#bootfour .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+nav#bootfour .navbar-brand {
+    display: none;
+}
+@media (min-width: 600px) and (max-width: 899px) { 
+    nav#bootfour .navbar-brand {
+    width: 119px;
+    height: 20px;
+    background: url(../images/lg-thinq-logo.png) left center no-repeat;
+    border: 0;
+    text-indent: -99999px;
+    display: block;
+}
+}
+@media (max-width: 599px) {
+    nav#bootfour .navbar-brand {
+        width: 119px;
+        height: 20px;
+        background: url(../images/lg-thinq-logo.png) left center no-repeat;
+        border: 0;
+        text-indent: -99999px;
+        display: block;
+    }
+}
+nav#bootfour .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+nav#bootfour .dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+nav#bootfour .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 250px;
+    padding: 20px 0px 30px 30px!important;
+    margin: 2px 0 0;
+    margin: 0.125rem 0 0;
+    font-size:inherit;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    -webkit-border-radius: 20px!important;
+    -webkit-border-top-right-radius: 0!important;
+    -moz-border-radius: 20px!important;
+    -moz-border-radius-topright: 0!important;
+    border-radius: 20px!important;
+    border-top-right-radius: 0!important;
+    text-align: right;
+}
+@media (max-width: 599px) {
+    nav#bootfour .dropdown-menu {
+        border: 0px solid rgba(0,0,0,.15);
+        border-radius: 0rem;
+        box-shadow: none;
+        -webkit-border-radius: 0px!important;
+        -webkit-border-top-right-radius: 0!important;
+        -moz-border-radius: 0px!important;
+        -moz-border-radius-topright: 0!important;
+        border-radius: 0px!important;
+        border-top-right-radius: 0!important;
+    }
+    nav#bootfour .dropdown-menu {
+        text-align: inherit;
+        margin: 0;
+        width: 100%;
+    }
+}
+nav#bootfour .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #000;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+/* rotate first span */
+nav#bootfour .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+/* hide second span */
+nav#bootfour .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+
+/* rotate third span */
+nav#bootfour .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+nav#bootfour .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
+
+
+
+
+/*
+================================
+BOOTSTRAP TABS
+================================
+*/
+.section.tabbed {
+    padding: 60px 0;
+}
+.boottabs .tab-content {
+    /* display: inline-block; */
+    /* padding: 60px; */
+}
+.boottabs .nav-tabs .nav-link {
+    /* border-radius: 0px;
+    background-color: #fff;
+    border-color: #ebebeb; */
+}
+.boottabs .nav-tabs .nav-link.active, .boottabs .nav-tabs .nav-link:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb #ebebeb #a50034;
+}
+@media screen and (max-width: 767px) and (orientation:portrait)  {
+    .boottabs .tab-content {
+        padding: 10px;
+    }
+    .boottabs .nav-tabs .nav-link {
+        font-size: .85rem;
+    }
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link {
+    border: 0px!important;
+}
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+}
+.nav-link:hover {
+    border: 0px;
+}
+.nav-link.active {
+    filter: grayscale(100%);
+}
+
+
+
+
+
+/*
+================================
+BOOTSTRAP 4 MENU - Accessible 2023
+================================
+*/
+/* nav#bootfour.navbar { height: 70px; z-index: 1; background-color: #f6f6f6; color: #000; text-decoration: none; }
+nav#bootfour.navbar .dropdown-menu li a { color: #000; }
+nav#bootfour.navbar .dropdown-menu { color: #000; box-shadow: 0 9px 5px -6px rgba(0,0,0,.25); background-color: #d8dadf; background-image: linear-gradient(to bottom,#d8dadf,#f8f8f8); }
+nav#bootfour.navbar .bootmega { position: absolute; width: 100%; left: 0; right: 0; padding: 15px; }
+nav#bootfour #navbar ul li.nav-item.dropdown.bootmega-li.active.show { position: static; }
+nav#bootfour #navbar ul li { padding: 0 10px; }
+nav#bootfour #navbar ul li a { font-family: 'LG Smart SemiBold'; color: #000; font-size: .75em; }
+nav#bootfour #navbar ul li a:hover { color: #a50034; }
+nav#bootfour #navbar ul li a.dropdown-item { color: #000; font-family: 'LG Smart Regular'; font-size: 1em; }
+nav#bootfour #navbar ul li a.dropdown-item:after { font-family: 'Font Awesome 5 Free'; font-weight: 900; content: '\f105'; color: #a50034; padding-left: 10px; }
+nav#bootfour #navbar ul li a.dropdown-item:hover { background-color: transparent; color: #a50034; }
+nav#bootfour #navbar ul li.nav-item.dropdown.bootmega-li h5 a { color: #000!important; font-family: 'LG Smart Regular'!important; font-size: 1.5em!important; }
+nav#bootfour #navbar ul li.nav-item.active a.nav-link { font-family: 'LG Smart Bold'; color: #a50034; }
+.mr-auto, .mx-auto {  background-color: #f6f6f6; }
+@media (min-width: 992px) {
+		nav#bootfour .navbar-expand-lg .navbar-nav .nav-link { padding: 0 2rem; }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width: 666px) and (min-device-width: 320px) {
+		nav#bootfour.navbar { height: auto; }
+		nav#bootfour.navbar .dropdown-menu { background-color: #d8dadf; }
+		nav#bootfour.navbar .bootmega { position: static; }
+		nav#bootfour .navbar-brand { width: 75% }
+} */

@@ -1,0 +1,203 @@
+
+/* accordion-tab-section */
+.section.accordion-tab-section .container-skel {
+    padding: 0px 0px 75px 0px;
+    padding-top: 75px;
+    /* border-top-right-radius: 50px;
+    background-image: linear-gradient(to left bottom, #e8ded4, #f1e5e2, #f6edef, #f9f6f9, #ffffff); */
+}
+.accordion-container {
+    width: 98%;
+    margin: 0 auto;
+}
+.six.columns.imageholder {
+    margin-left: -70px;
+    width: 56.3%;
+}
+.accordion-thumb img {
+    /* aspect-ratio: 3/2;
+    -webkit-transition: aspect-ratio 0.5s,opacity 0.5s;
+    transition: aspect-ratio 0.5s,opacity 0.5s; */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2.5rem;
+}
+.accordionwrap {
+    border-radius: 2.5rem 0rem 2.5rem 2.5rem;
+    box-shadow: 0px 2px 10px rgba(27, 26, 30, 0.15);
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    background-color:#fff;
+    overflow: hidden;
+    margin-top: 10rem;
+}
+.imageholder {
+    position: relative;
+    z-index: 5;
+}
+.accordion-hdr {
+    font-family: 'LG Smart Regular';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    width: 550px;
+    margin: 0px 0 0 100px;
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0);
+}
+.accordion-body {
+    background-color: transparent;
+    color: rgba(27, 26, 30, 0.6);
+    line-height: 1.33;
+    font-family: "LG Smart",sans-serif;
+}
+.accordion-item {
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.nav-tabs,
+.accordion-item:last-child,
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom: 0px;
+}
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    color: rgba(27, 26, 30, 0.87);
+    font-family: "LG Smart",sans-serif;
+    font-size: 1.4286rem;
+    /* background-color: #e7f1ff; 
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125); */
+}
+/* OG
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23A50034'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+} */
+
+/* V2
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/accordion-arrow-close.png");
+    transform: rotate(360deg);
+}
+.accordion-button.collapsed::after {
+    background-image: url("../images/accordion-arrow-open.png");
+}
+*/
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 1em;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 900" fill="%23A50034"><path d="M 96.00,96.00l-96.00,96.00l 256.00,256.00l 256.00-256.00l-96.00-96.00L 256.00,256.00L 96.00,96.00z"/></svg>');
+}
+.accordion-button::after {
+     padding: 0.1em 1.5em 0.1em 0.4em;
+}
+.accordion-button:not(.collapsed)::after {
+     padding: 0.1em 1.5em 0.5em 1.3em;
+}
+
+
+
+
+/*
+================================================================
+MOBILE LANDSCAPE 
+================================================================
+*/
+@media (min-width: 600px) and (max-width: 899px) {  
+    .six.columns.imageholder {
+        margin-left: inherit;
+        width: 100%;
+    }
+    .six.columns.accordionwrap {
+        margin-left: inherit;
+        width: 100%;
+    }
+    .accordionwrap {
+        margin-top: -50px;
+    }
+
+    /*
+    ================================
+    REVERSE DIV ORDER
+    ================================
+    */
+    .reverse-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+    .BBB {
+        order: 1;
+        width: 100%;
+    }
+
+    .AAA {
+        order: 2;
+        width: 100%;
+    }
+}
+
+
+
+/*
+================================================================
+MOBILE PORTRAIT 
+================================================================
+*/
+@media screen and (max-width:599px) {
+    .six.columns.imageholder {
+        width: 97%!important;
+        margin-left: 4px;
+        width: inherit;
+    }
+    .accordion-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .accordionwrap {
+        margin-top: -50px;
+        height: 450px;
+    }
+    .accordion-hdr {
+        font-family: 'LG Smart Regular';
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 25px;
+        width: 550px;
+        margin: 0px;
+        padding: 0 0 20px 35px;
+    }
+
+    /*
+    ================================
+    REVERSE DIV ORDER
+    ================================
+    */
+    .reverse-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+    .BBB {
+        order: 1;
+        width: 100%;
+    }
+
+    .AAA {
+        order: 2;
+        width: 100%;
+    }
+}
