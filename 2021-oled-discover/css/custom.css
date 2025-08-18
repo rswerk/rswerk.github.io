@@ -1,0 +1,904 @@
+/*
+================================
+HSAD PACK 2022
+================================
+*/
+
+
+.hsadpack {}
+.section { color:#333; font-family: 'LG Smart Regular'; /*font-size: calc(13px + (18 - 13) * ((100vw - 768px) / (1600 - 768))); line-height: calc(1.4em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));*/ }
+.section a { }
+.section a:hover { text-decoration: none; }
+.section img { max-width: 100% }
+.section sup { font-size:0.6em; }
+.section ul { margin:0; padding:0; }
+.section ul li, ol li { margin-bottom: 0px; list-style:none; }
+.section .red, .red a { color:#a50034 !important; }
+.section .fine { font-size: .45em; }
+.section .italic { font-style:italic; }
+.section .bold { font-family: 'LG Smart Bold'; }
+.section .center { text-align: center; }
+.section .white { color: #fff; }
+.section .videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+.section .videoWrapper iframe { position: absolute;	top: 0;	left: 0; width: 100%; height: 100%;	}
+.for-mobile { display: none !important; }
+.row-skel:after { content: ""; display: table; clear: both; padding-bottom: 2%;  }
+.fine { padding-top: 3%; }
+.btn-small, a.btn-small { margin-bottom: 10px; font-family: "LG Smart Bold",sans-serif; color: #fff; border-color: #a50034; background: #a50034; display: inline-block; min-width: 100px; padding: 2px 24px; border-radius: 3px; text-transform: uppercase; text-decoration: none; text-align: center; vertical-align: middle; white-space: normal; cursor: pointer; }
+.btn-small:hover, a.btn-small:hover,.btn-small:focus, a.btn-small:focus { background-color:#c40043; }
+.btn-small:hover { background-color:#c40043; }
+.btn-small:focus { background-color:#c40043; }
+.btn-small.light, a.btn-small.light { border-color: #6b6b6b!important; border: 1px solid; background: #fff; color: #6b6b6b; padding: 0px 24px; }
+.btn-small.light:hover, a.btn-small.light:hover,.btn-small.light:focus, a.btn-small.light:focus { color:#000;  background-color: #fff; border-color: #000!important; }
+.btn-full, a.btn-full { font-family: "LG Smart Bold",sans-serif; color: #fff; border-color: #a50034; background: #a50034; display: inline-block; width: 100%; padding: 7px 24px; border-radius: 3px; text-transform: uppercase; text-decoration: none; text-align: center; vertical-align: middle; white-space: normal; cursor: pointer; }
+.btn-full:hover, a.btn-full:hover,.btn-full:focus, a.btn-full:focus { background-color:#c40043; }
+.btn-full:hover { background-color:#c40043; }
+.btn-full:focus { background-color:#c40043; }
+.adlogo { position: absolute; top: 3%; right: 1.8%; z-index: 1; }
+#respoiframe { min-height: 93vh!important; }
+#sticky { top: 0px; position: -webkit-sticky; position: sticky; z-index: 100; }
+#hidden-lightbox .copy img { max-width: 100%; }
+
+
+/*
+================================
+ HEROS RESPONSIVE 2020
+================================
+*/
+.hero-responsive { color: #fff; position: relative; background-color: #000; }
+.hero-responsive img.hero-bg { max-width: 100%; }
+.hero-responsive .hero-txt-center { display: block; position: absolute; left: 50%; top: 55%; transform: translate(-50%, -50%); width: 79%; text-align: center; }
+.hero-responsive .hero-txt-left { display: block; position: absolute; left: 14.6%; top: 50%; transform: translate(-20%, -50%); width: 40%; }
+.hero-responsive .hero-txt-right { display: block; position: absolute; left: 80%; top: 50%; transform: translate(-60%, -50%); width: 34%; }
+.hero-responsive .hero-txt-left, .hero-responsive .hero-txt-right, .hero-responsive .hero-txt-center { font-family: 'LG Smart SemiBold'; text-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, .3); /* font-size: .85em; */ line-height: 1.3em; }
+.hero-responsive .hero-txt-left h1, .hero-responsive .hero-txt-center h1,.hero-responsive .hero-txt-right h1 { font-size: 2em; line-height: 1em; text-transform: inherit!important; color: #fff; }
+.hero-responsive .hero-txt-center a, .hero-responsive .hero-txt-left a, .hero-responsive .hero-txt-right a { color: #fff; }
+
+
+/*
+================================
+SLICK 2020
+================================
+*/
+.slick-dots { bottom: 15px; }
+.slick-dots li.slick-active button:before { opacity: .75; background-color: #a50034; color: transparent; }
+.slick-dots li button:before { border: 1px solid rgba(0,0,0,.5); background-color: #fff; color: transparent; width: 12px; height: 12px; border-radius: 50%; }
+.slide-arrow { position: absolute; top: 50%; margin-top: -15px; }
+.prev-arrow { left: 20px; z-index: 1; border: solid #767676; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; transform: rotate(135deg); -webkit-transform: rotate(135deg); overflow: hidden; width: 30px; height: 30px; }
+.next-arrow { right: 20px; border: solid #767676; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); overflow: hidden; box-sizing: border-box; width: 30px; height: 30px; }
+.next-arrow:hover, .prev-arrow:hover { border: solid #000; border-width: 0 3px 3px 0;  }
+button { margin: 0; padding: 0; background: none; border: none; border-radius: 0; outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+button:focus, button:hover { outline: none !important; box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important; }
+.slick-responsive .slick-slide { margin: 0 20px; }
+.slick-responsive .slick-list { margin: 0 -20px; }
+.slick-responsive .slick-dots { bottom: -60px; }
+
+
+/*
+================================
+SECTIONS PACKAGE
+================================
+*/
+.placeholder { background: #f7f7f7; min-height: 100px; }
+.layered div { top:0; position:absolute; max-width: 100%; display: block; }
+.container-skel .row { margin: 0px; } /* override bootstrap */
+
+/* section one */
+.section.one .container-skel {
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffffff 0%, #e8e8e8 60%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%,#e8e8e8 60%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%,#e8e8e8 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+.section.one .container-skel .row.htc .copyblock { padding-top: 100px; font-size: 24px; line-height: 28px; }
+.section.one .container-skel .row.htc h1 { font-family: 'LG Smart Light'; font-size: 53px; line-height: 70px; padding-top: 25px; }
+.section.one .container-skel .row.htc .layered { position: relative; max-width: 100%; min-height: 880px; }
+.section.one .container-skel .row.htc .img1 { z-index:1; }
+.section.one .container-skel .row.htc .img2 { z-index:2; }
+.section.one .container-skel .row.htc .img3 { z-index:2; /*padding-top: 20px;*/ }
+
+
+/* section two */
+.section.two .container-skel .row.keythings { background-color: #e8e8e8; }
+.section.two .container-skel .row.keythings .copyblock { display: contents; }
+.section.two .container-skel .row.keythings h2 { font-family: 'LG Smart Light'; font-size: 46px; line-height: 53px; }
+.section.two .container-skel .row.keythings .layered { position: relative; max-width: 100%; min-height: 1400px; }
+.section.two .container-skel .row.keythings .img1 {
+		z-index:1;
+		/* anij */
+		animation: fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
+		animation-duration: 2s; /* don't forget to set a duration! */
+		animate-delay: 7s;
+}
+.section.two .container-skel .row.keythings .img2 { z-index:2; padding-left: 30px; }
+.section.two .container-skel .row.keythings .layer3 { z-index:3; margin: -60px 0 0 -175px;
+		background-color: #f6f6f6;
+		width: 85%;
+		height: 100%;
+		/* rounded corners*/
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+}
+.section.two .container-skel .row.keythings .layer4 { z-index:4; width: 650px;  text-align: left; font-family: 'LG Smart Light'; font-size: 20px; line-height: 28px; }
+.section.two .container-skel .row.keythings .boxy h3 { font-family: "LG Smart Regular",sans-serif; font-size: 28px; line-height: 32px; padding-bottom: 20px; }
+
+.boxy {
+		width:44%;
+		display:block;
+		float: left;
+		box-sizing:
+		border-box;
+		padding: 50px 0 0 0;
+		margin-left: 4%;
+}
+.boxy:first-child {
+		margin-left: 0;
+}
+/* Self Clearing Goodness */
+.rowy {
+		display: block;
+}
+.rowy:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+
+
+/* section three */
+.section.three .container-skel .row.htcrtv .layered { position: relative; max-width: 100%; min-height: 1740px; }
+.section.three .container-skel .row.htcrtv .img1 { z-index:1; }
+.section.three .container-skel .row.htcrtv .img2 { z-index:2; }
+.section.three .container-skel .row.htcrtv .img3 { z-index:3;
+		width: 56.6666666667%;
+		margin-left: 21.3333333333%;
+		margin-top: 155px;
+		padding: 30px;
+		border-radius: 10px;
+		/* rounded corners*/
+		background-color: rgba(235, 235, 235, .75);
+		/*filter: blur(4px);*/
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		/* drop shadow */
+		box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.17);
+		-webkit-box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.17);
+		-moz-box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.17);
+}
+.section.three .container-skel .row.htcrtv .boxy.styled h3 {
+		font-family: "LG Smart Regular",sans-serif;
+		font-size: 24px;
+		line-height: 32px;
+		padding-bottom: 20px;
+}
+.section.three .container-skel .row.htcrtv .boxy.styled {
+		width:40%;
+		display:block;
+		float: left;
+		box-sizing:
+		border-box;
+		margin-left: 4%;
+	  padding: 40px;
+		margin-bottom: 40px!important;
+		font-family: 'LG Smart Light';
+		font-size: 16px;
+		line-height: 22px;
+		background-color: rgba(245, 245, 245, .9);
+		-webkit-border-top-left-radius: 15px;
+		-webkit-border-bottom-right-radius: 15px;
+		-moz-border-radius-topleft: 15px;
+		-moz-border-radius-bottomright: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+}
+.section.three .container-skel .row.htcrtv .boxy {
+		width: 50%;
+}
+.section.three .container-skel .row.htcrtv h2 {
+		font-family: 'LG Smart Light';
+		font-size: 46px;
+		line-height: 53px;
+		text-align: center;
+		padding: 50px;
+}
+
+
+/* section four */
+.section.four .container-skel .row.touts h2 {
+		font-family: 'LG Smart Light';
+		font-size: 33px;
+		line-height: 35px;
+		text-align: center;
+		padding: 50px;
+}
+.section.four .container-skel .row.touts .product-tout {
+		text-align: center;
+		background-color: #fff;
+		padding: 20px 0;
+		border: 1px solid #e2e2e2;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+}
+.section.four .container-skel .row.touts .product-tout .title {
+		font-family: "LG Smart SemiBold",sans-serif;
+	  font-size: 20px;
+		color:#000;
+		padding-bottom: 15px;
+}
+.section.four .container-skel .row.touts .product-tout .model {
+		text-align: left;
+		height: 120px;
+		padding: 0 20px;
+}
+.section.four .container-skel .row.touts .product-tout .thumb img {
+	margin: 0 auto;
+}
+.section.four .container-skel .row.touts .product-tout .btn-small,
+.section.four .container-skel .row.touts .product-tout a.btn-small {
+		padding: 13px 24px;
+}
+.section.four .container-skel {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+16,000000+48,3a3a3a+55,000000+79 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 16%, rgba(0,0,0,1) 48%, rgba(58,58,58,1) 55%, rgba(0,0,0,1) 79%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 16%,rgba(0,0,0,1) 48%,rgba(58,58,58,1) 55%,rgba(0,0,0,1) 79%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 16%,rgba(0,0,0,1) 48%,rgba(58,58,58,1) 55%,rgba(0,0,0,1) 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+.section.four .container-skel .row.pac { color: #fff; }
+.section.four .container-skel .row.pac .row-skel { padding-bottom: 50px; }
+.section.four .container-skel .row.pac .sectitle { padding: 50px 0px; }
+.section.four .container-skel .row.pac .sectitle h2 { text-align: center; color: #fff; }
+.section.four .container-skel .row.pac .copyblock {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 45px;
+		padding: 30px;
+
+		/* bg gradient */
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#454545+7,242424+26 */
+		background: rgb(69,69,69); /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  rgba(69,69,69,1) 7%, rgba(36,36,36,1) 26%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(69,69,69,1) 7%,rgba(36,36,36,1) 26%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(69,69,69,1) 7%,rgba(36,36,36,1) 26%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#242424',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+		/* shadow */
+		box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.21);
+		-webkit-box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.21);
+		-moz-box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.21);
+
+		/* rounded corners*/
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+}
+.section.four .container-skel .row.pac h2 {
+	padding-bottom: 15px;
+	margin-top: 50px;
+}
+.section.four .container-skel .row.pac .copyblock .rojo {
+		position: absolute;
+		background-color: red;
+		height: 68px;
+		width: 2px;
+}
+.section.four .container-skel .row.pac .copyblock .in {
+		position: relative;
+		padding-left: 15px;
+		font-size: 18px;
+    line-height: 26px;
+}
+.section.four .container-skel .row.pac .copyblocksub {
+	font-size: 17px;
+	line-height: 23px;
+}
+.section.four .container-skel .row.pac h1 { font-family: 'LG Smart Light'; font-size: 64px; line-height: 74px; padding-top: 25px; }
+.section.four .container-skel .row.pac .layered { position: relative; max-width: 100%; min-height: 570px; }
+.section.four .container-skel .row.pac .img1 { z-index:1; }
+.section.four .container-skel .row.pac .img2 { z-index:2; }
+.section.four .container-skel .row.pac .img3 { z-index:3; }
+
+
+/* section five */
+.section.five .container-skel .row.touts {
+	background-color: #000;
+}
+.section.five .container-skel .row.sq {
+	background-color: #000;
+	margin-top: -100px;
+}
+.section.five .container-skel .row.sq .layered { position: relative; max-width: 100%; min-height: 724px; }
+.section.five .container-skel .row.sq h2 {
+		margin: -45px 0 0 0;
+		padding: 0 0 20px 0;
+}
+.section.five .container-skel .row.sq h2 .sq-icon {
+		margin: -40px 0 0px 0;
+		padding: 0 145px;
+		line-height: 0;
+}
+.section.five .container-skel .row.sq .img1 { z-index:1; }
+.section.five .container-skel .row.sq .img2 { z-index:2; }
+.section.five .container-skel .row.sq .img3 { z-index:3; width: 100%; height: 100%; }
+.section.five .container-skel .row.sq .boxy.styled {
+	width: 35%;
+	margin: 540px auto 0 auto;
+	display:block;
+	float: none;
+	box-sizing:
+	border-box;
+  padding: 40px;
+	font-family: 'LG Smart Light';
+	font-size: 20px;
+	line-height: 28px;
+	background-color: rgba(245, 245, 245, .9);
+	/* rounded corners*/
+	-webkit-border-radius: 10px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius: 10px;
+	-moz-border-radius-topleft: 0;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+}
+.section.five .container-skel .row.sq .boxy.styled .rojo {
+		position: absolute;
+		background-color: red;
+		height: 55px;
+		width: 2px;
+}
+.section.five .container-skel .row.sq .boxy.styled .in {
+		position: relative;
+		padding-left: 15px;
+		display: block;
+		margin-bottom: 20px;
+}
+.section.five .container-skel .row.sq .boxy.styled .sub {
+		display: block;
+		font-size: 16px;
+		line-height: 20px;
+}
+
+
+/* section six */
+.section.six .container-skel { background-image: url(../images/webos-1.png); min-height: 1200px; background-size: cover; }
+.section.six .container-skel .row.webos .layered { position: relative; max-width: 100%; min-height: 800px; }
+.section.six .container-skel .row.webos .img1 { z-index:1; }
+.section.six .container-skel .row.webos .img2 { z-index:2; }
+.section.six .container-skel .row.webos .img3 { z-index:3; width: 100%; height: 100%; }
+.section.six .container-skel .row.webos .boxy.styled {
+		width: 28%;
+		margin: 155px auto 0 50%;
+		display:block;
+		float: none;
+		box-sizing:
+		border-box;
+	  padding: 40px;
+		font-family: 'LG Smart Light';
+		font-size: 18px;
+		line-height: 25px;
+		background-color: rgba(245, 245, 245, .9);
+		-webkit-border-top-left-radius: 15px;
+		-webkit-border-bottom-right-radius: 15px;
+		-moz-border-radius-topleft: 15px;
+		-moz-border-radius-bottomright: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+}
+.section.six .container-skel .row.webos h3 {
+		color: #A50034;
+		font-family: 'LG Smart Bold';
+		font-size: 17px;
+		line-height: 25px;
+		padding: 25px 0px 10px 0;
+}
+
+
+/* section seven */
+.section.seven .container-skel {
+		color: #fff;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+		background: rgb(125,126,125); /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.section.seven .container-skel a {
+		color: #fff;
+}
+.section.seven .container-skel .six.columns.remote { background: url(../images/magic-1.png) bottom center no-repeat; background-size: cover; }
+.section.seven .container-skel .six.columns.remote h2 {
+		text-align: center;
+		padding-top: 40px;
+}
+.section.seven .container-skel .copyblock {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 75px 0 50px 0;
+		padding: 15px 30px;
+		width: 65%;
+		/* bg gradient */
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#454545+7,242424+26 */
+		background: rgb(69,69,69); /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  rgba(69,69,69,1) 7%, rgba(36,36,36,1) 26%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(69,69,69,1) 7%,rgba(36,36,36,1) 26%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(69,69,69,1) 7%,rgba(36,36,36,1) 26%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#242424',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		/* shadow */
+		box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.21);
+		-webkit-box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.21);
+		-moz-box-shadow: 0px 11px 30px 18px rgba(0,0,0,0.21);
+		/* rounded corners*/
+		-webkit-border-top-right-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		-moz-border-radius-topright: 10px;
+		-moz-border-radius-bottomright: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+}
+.section.seven .container-skel .copyblock .rojo {
+		position: absolute;
+		background-color: red;
+		height: 153px;
+		width: 2px;
+}
+.section.seven .container-skel .copyblock .in {
+		position: relative;
+		padding-left: 15px;
+		font-size: 18px;
+    line-height: 26px;
+}
+.section.seven .container-skel .six.columns.remote-copy {
+		margin-left: -4%;
+}
+.section.seven .container-skel .six.columns.remote-copy .magic-row {
+		display: block;
+		height: 250px;
+}
+.section.seven .container-skel .six.columns.remote-copy .img{
+		width: 30%;
+		display:block;
+		float: left;
+}
+.section.seven .container-skel .six.columns.remote-copy .copy {
+		width: 50%;
+		display:block;
+		float: left;
+		font-size: 18px;
+	  line-height: 25px;
+}
+.section.seven .container-skel .six.columns.remote-copy h3 {
+    font-family: 'LG Smart Bold';
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px 0px 10px 0;
+}
+.section.seven .container-skel .six.columns.remote .image-holder img {
+		opacity: 0;
+		transition: opacity 1s;
+}
+.section.seven .container-skel .six.columns.remote .image-holder img.fade-in {
+  opacity: 1;
+}
+
+
+/* section eight */
+.section.eight .container-skel .row.touts {
+		background-color: #f9f9f9;
+		padding-bottom: 55px;
+}
+.section.eight .container-skel .row.touts h2 {
+		font-family: 'LG Smart Light';
+		font-size: 33px;
+		line-height: 35px;
+		text-align: center;
+		padding: 50px;
+}
+.section.eight .container-skel .row.touts .product-tout {
+		text-align: center;
+		background-color: #fff;
+		padding: 20px 0;
+		border: 1px solid #e2e2e2;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+}
+.section.eight .container-skel .row.touts .product-tout .title {
+		font-family: "LG Smart SemiBold",sans-serif;
+	  font-size: 28px;
+		color:#000;
+		padding-bottom: 15px;
+}
+.section.eight .container-skel .row.touts .product-tout .rating {
+	  font-family: "LG Smart SemiBold",sans-serif;
+		font-size: 28px;
+		line-height: 30px;
+}
+.section.eight .container-skel .row.touts .product-tout .sub {
+	  font-family: "LG Smart SemiBold",sans-serif;
+		font-size: 18px;
+		line-height: 25px;
+}
+.section.eight .container-skel .row.touts .product-tout .model {
+		text-align: left;
+		height: 120px;
+}
+.section.eight .container-skel .row.touts .product-tout .thumb img {
+	margin: 0 auto;
+}
+.section.eight .container-skel .row.touts .product-tout .details {
+		padding: 20px 24px;
+}
+.section.eight .container-skel .row.touts .product-tout .details a {
+		color: #A50034;
+		font-family: "LG Smart SemiBold",sans-serif;
+}
+
+
+/* section nine */
+.section.nine {
+	padding-bottom: 30px;
+}
+.section.nine .eyebrow {
+	padding-bottom: 30px;
+}
+.section.nine .eyebrow h1 {
+	padding-bottom: 30px;
+}
+
+
+
+/*
+================================
+MEDIA QUERIES
+================================
+*/
+
+/* MDPI Screen */
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+/* HiDPI Screen */
+@media (min-width: 1285px) and (max-width: 1440px) {
+
+}
+
+/* Mobile and Tablets - Landscape */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+/* section one */
+.section.one .container-skel .row.htc h1 {
+    font-size: 32px;
+    line-height: 35px;
+}
+.section.one .container-skel .row.htc .copyblock {
+    font-size: 15px;
+    line-height: 22px;
+}
+.section.one .container-skel .row.htc .layered {
+    min-height: 500px;
+}
+
+/* section two */
+.section.two .container-skel .row.keythings .layer4 {
+    font-size: 15px;
+    line-height: 22px;
+}
+.section.two .container-skel .row.keythings .layer3 {
+    width: 100%;
+}
+.section.two .container-skel .row.keythings .layered {
+    min-height: 1500px;
+}
+.section.two .container-skel .row.keythings h2 {
+		font-size: 40px;
+		line-height: 43px;
+}
+
+
+/* section three */
+.section.three .container-skel .row.htcrtv h2 {
+    font-size: 40px;
+    line-height: 43px;
+}
+.section.three .container-skel .row.htcrtv .boxy.styled {
+    width: 50%;
+    padding: 20px;
+}
+.section.three .container-skel .row.htcrtv .boxy {
+    width: 40%;
+}
+.section.three .container-skel .row.htcrtv .layered {
+    min-height: 1900px;
+}
+
+
+/* section four */
+.section.four .container-skel .row.touts .product-tout .title {
+    font-size: 14px;
+}
+.section.four .container-skel .row.touts .product-tout .model {
+    height: 270px;
+}
+.section.four .container-skel .row.pac .layered {
+    min-height: 660px;
+}
+
+/* section five */
+.section.five .container-skel .row.sq .boxy.styled {
+    width: 55%;
+    margin: 265px auto 0 auto;
+		padding: 30px;
+}
+.section.five .container-skel .row.sq .layered {
+    min-height: 434px;
+}
+.section.six .container-skel .row.webos .boxy.styled {
+    width: 38%;
+    padding: 20px;
+}
+.section.five .container-skel .row.sq h2 {
+    padding: 0 0 10px 0;
+}
+
+
+/* section eight */
+.section.eight .container-skel .row.touts .product-tout .title {
+    font-size: 14px;
+}
+
+}
+
+
+
+
+/* Mobile - Portrait */
+@media (max-width: 767px) {
+.for-mobile { display: inherit !important; }
+.for-desktop { display: none !important; }
+.section { color: #333; font-family: 'LG Smart Regular'; }
+/*.container-skel { padding: 0px; }*/
+
+/* section one */
+.section.one .container-skel {
+    background: #ffffff;
+}
+.section.one .container-skel .row.htc .copyblock {
+		padding-top: 30px;
+		font-size: 20px;
+		line-height: 28px;
+		padding-bottom: 25px;
+}
+.section.one .container-skel .row.htc h1 {
+    font-family: 'LG Smart Light';
+    font-size: 36px;
+    line-height:37px;
+    padding: 20px 0;
+}
+
+/* section two */
+.section.two .container-skel .row.keythings {
+    background-color: #fff;
+		text-align: center;
+}
+.section.two .container-skel .row.keythings h2 {
+    font-family: 'LG Smart Light';
+    font-size: 28px;
+    line-height: 32px;
+		padding: 0 0 15px 0;
+}
+.section.two .container-skel .row.keythings .twelve.columns {
+		padding-bottom: 40px;
+		font-size: 18px;
+    line-height: 28px;
+}
+.section.two .container-skel .row.keythings .twelve.columns h3 {
+    font-family: 'LG Smart Regular';
+    font-size: 26px;
+    line-height: 32px;
+}
+
+
+/* section three */
+.section.three .container-skel .row.htcrtv {
+		display:block;
+		float: left;
+		text-align: center;
+		box-sizing: border-box;
+	  padding: 30px;
+		margin-bottom: 40px!important;
+		font-family: 'LG Smart Light';
+		font-size: 20px;
+		line-height: 28px;
+		background-color: rgba(245, 245, 245, 1);
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+}
+.section.three .container-skel .row.htcrtv h2 {
+		font-family: 'LG Smart Light';
+		font-size: 28px;
+		line-height: 32px;
+		text-align: center;
+		padding: 0px;
+}
+.section.three .container-skel {
+		background: url(../images/htcrtv-bg-m.png) top center no-repeat;
+		background-size: contain;
+}
+.section.three .container-skel .row.htcrtv h3 {
+    font-family: 'LG Smart Regular';
+    font-size: 24px;
+    line-height: 32px;
+		padding-bottom: 15px;
+}
+
+
+/* section four */
+.section.four .container-skel .row.touts h2 {
+    font-family: 'LG Smart Light';
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0 0 15px 0;
+}
+.section.four .container-skel .row.touts .product-tout {
+    margin: 0 0 25px 0;
+}
+.section.four .container-skel .row.pac .layered {
+    min-height: 270px;
+}
+.section.four .container-skel .row.pac h2 {
+    text-align: center;
+		margin-top: 0px;
+}
+.section.four .container-skel .row.pac .copyblock {
+    padding: 20px;
+}
+.section.four .container-skel .row.pac .copyblock .in {
+		font-size: 20px;
+		line-height: 24px;
+}
+
+/* section five */
+.section.five .container-skel {
+		padding: 0px;
+}
+.section.five .container-skel .row.sq {
+    margin-top: 0px;
+}
+.section.five .container-skel .row.sq .boxy.styled {
+    width: 80%;
+    margin: 180px auto 0 auto;
+    display: block;
+    float: none;
+    box-sizing: border-box;
+    padding: 30px;
+    font-family: 'LG Smart Light';
+    font-size: 20px;
+    line-height: 28px;
+    background-color: rgba(245, 245, 245, .9);
+    -webkit-border-radius: 10px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 10px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+}
+.section.five .container-skel .row.sq h2 .sq-icon {
+    margin-top: -117px;
+    padding: 0 65px;
+}
+.section.five .container-skel .row.sq h2 {
+    text-align: center;
+}
+
+
+/* section six */
+.section.six .container-skel {
+    background-image: none;
+		background-color: #000;
+    min-height: 1400px;
+}
+.section.six .container-skel .row.webos .boxy.styled {
+    width: 100%;
+    margin: 215px auto 0 auto;
+    display: block;
+    float: none;
+    box-sizing: border-box;
+    padding: 40px;
+    font-family: 'LG Smart Light';
+    font-size: 18px;
+    line-height: 25px;
+    background-color: rgba(245, 245, 245, .9);
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.section.six .container-skel .row.webos .boxy.styled h2 {
+		font-family: 'LG Smart Light';
+		font-size: 28px;
+		line-height: 32px;
+		padding: 0 0 15px 0;
+		text-align: center;
+}
+.section.six .container-skel .row.webos h3 {
+    font-size: 24px;
+    line-height: 19px;
+}
+
+
+/* section seven */
+.section.seven .container-skel {
+		background: #000;
+		margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.section.seven .container-skel .six.columns.remote .image-holder img {
+    opacity: 1;
+    transition: opacity 1s;
+}
+.section.seven .container-skel .copyblock {
+		width: 100%;
+}
+.section.seven .container-skel .six.columns.remote-copy {
+    margin-left: 0;
+}
+.section.seven .container-skel .copyblock .rojo {
+    position: absolute;
+    background-color: red;
+    height: 260px;
+    width: 2px;
+}
+.section.seven .container-skel .twelve.columns {
+		text-align: center;
+}
+.section.seven .container-skel .twelve.columns .copy {
+		padding: 20px 0;
+}
+.section.seven .container-skel .twelve.columns .copy h3 {
+	font-size: 24px;
+	line-height: 19px;
+}
+
+
+/* section eight */
+.section.eight .container-skel .row.touts {
+    background-color: #fff;
+}
+.section.eight .container-skel .row.touts h2 {
+		font-size: 28px;
+		line-height: 32px;
+    padding: 25px 0px;
+}
+.section.eight .container-skel .row.touts .product-tout{
+    margin: 0 0 25px 0;
+}
+
+
+.section.nine .container-skel .hero-responsive .hero-txt-center {
+    top: 55%;
+		width: 90%;
+}
+.section.nine .container-skel .hero-responsive .hero-txt-center h1 {
+		font-size: 52px;
+    line-height: 60px;
+}
+
+
+
+
+
+
+
+}
